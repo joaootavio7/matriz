@@ -8,9 +8,9 @@ for(let i = 0; i <3; i++){
     matrizDois[i] = new Array (3);  
 
     for (let j = 0; j < 3; j++) {
-        let nome: number = teclado(`digite  o nome que vai estar no seu endereço [${i}, ${j}]`)
-        if(nome <= 9){
-            matrizDois[i][j]= nome       
+        let numero: number = teclado(`digite  o nome que vai estar no seu endereço [${i}, ${j}]`)
+        if(numero <= 9){
+            matrizDois[i][j]= numero       
         }
         else{
             j--;
