@@ -10,6 +10,28 @@ let teclado = require(`prompt-sync`)()
 
 let matrizDois: number[][] = new Array(3)
 
+for (let i = 0; i < 3; i++) {
+
+    matrizDois[i] = new Array(3)
+
+    for (let j = 0; j < 3; j++) {
+
+        let numero: number = teclado(`Digite o número que vai estar no endereço [${i}, ${j}]
+                               da matriz: `)
+
+
+        matrizDois[i][j] = numero;
+    }
+
+}
+console.log(matrizDois)
+
+let pergunta: string = (teclado(`Você quer criar a quarta linha S/N?`))
+
+if (pergunta == `S` || pergunta == `N`) {
+    console.log(`Quarta linha criada!!`)
+}
+
 for (let i = 0; i < 4; i++) {
 
     matrizDois[i] = new Array(3)
@@ -17,10 +39,11 @@ for (let i = 0; i < 4; i++) {
     for (let j = 0; j < 4; j++) {
 
         let numero: number = teclado(`Digite o número que vai estar no endereço [${i}, ${j}]
-                           da matriz: `)
+                               da matriz: `)
 
 
         matrizDois[i][j] = numero;
     }
+
 }
 console.log(matrizDois)
