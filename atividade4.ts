@@ -26,7 +26,7 @@ for (let i = 0; i < 3; i++) {
 }
 console.log(matrizDois)
 
-let pergunta: string = (teclado(`Você quer criar a quarta linha S/N?`))
+let pergunta: string = (teclado(`Você quer criar a quarta linha S/N?: `))
 
 if (pergunta == `S` || pergunta == `N`) {
     console.log(`Quarta linha criada!!`)
